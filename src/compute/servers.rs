@@ -473,6 +473,9 @@ pub enum ServerAction {
     /// Unrescues a server. Changes status to ACTIVE.
     #[serde(rename = "unrescue", serialize_with = "unit_to_null")]
     Unrescue,
+    /// Unshelve a server. Changes status to ACTIVE.
+    #[serde(rename = "unshelve", serialize_with = "unit_to_null")]
+    Unshelve,
 }
 
 #[async_trait]
